@@ -214,7 +214,7 @@ ul.columns>li:before {
     color: black;
     font-weight: 500;
     font-size: 16px;
-    
+    letter-spacing: 0.5px;
     border-radius: 25px;
     transition: 0.3s;
   }
@@ -223,13 +223,11 @@ ul.columns>li:before {
     padding: 0.8rem 1.2rem;
     min-height: 150px;
     border-radius: 22px;
-    resize: none;
+ 
   }
   #text-12 {
-    width: 100% !important;
-    height: 50px !important;
-    max-height: 50px !important;
-}
+line-height: normal;
+  }
   
 #form_button {
     background: none;
@@ -380,12 +378,13 @@ ul.columns>li:before {
   }
 
   .contentServices {
-
+    display: block;
     text-align: center;
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 20px;
-  }
+
+   }
 
 
 .services-text {
@@ -399,6 +398,7 @@ ul.columns>li:before {
     font-size: 17px;
     display: inline-block;
     color: black;
+padding-right: 45px;
 
   }
 
@@ -408,7 +408,7 @@ ul.columns>li:before {
     font-weight: bold;
     top: 1px;
     color: black;
-    margin: 10px;
+    margin: 2px;
   }
 
  footer {
@@ -476,4 +476,5 @@ ul.columns>li:before {
     padding: 90px;
     font-size: 18px;
     margin-bottom: 70px;
+  
   }
