@@ -5,7 +5,11 @@
     font-family: "Poppins", sans-serif;
     position:relative;
     height: 40px;
-    width: 100%
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
   
   }
 
@@ -90,7 +94,8 @@
     align-items: center;
     justify-content: center;
     padding-bottom: 0;
-
+    margin: 0 auto;
+    width: 100%;
 
   }
 
@@ -366,39 +371,35 @@ ul.columns>li:before {
       padding: 0.45rem 1.2rem;
     }
   }
-
+  @media (max-width: 960px) {
+    p { font-size: 1em; }
+  }
 
   .contentServices {
-    display: block;
+
     text-align: center;
     margin-top: 50px;
     padding-top: 50px;
     padding-bottom: 20px;
-    line-height: 2px;
-    width: 100%;
-    height: 100%;
   }
 
-  .col-ser  {
-    line-height: 2px;
-  }
 
 .services-text {
+
     font-size: 20px;
-    font-weight: 200;
+    font-weight:525;
     font-family: "Poppins", sans-serif;
 }
  
   .col-ser li {
     font-size: 17px;
-    display: inline;
+    display: inline-block;
     color: black;
-    text-align: center;
+
   }
 
   ul.col-ser>li:before {
     content: "•";
-    position: relative;
     font-size: 1em;
     font-weight: bold;
     top: 1px;
@@ -407,15 +408,13 @@ ul.columns>li:before {
   }
 
  footer {
-    width: 100%;
+
     height: 40px; 
     text-align: center;
-    display: block;
-    position:flex;
    padding: 10px 10px 10px 10px;
    min-width: 960px;
-   
-  
+   margin-bottom: -5px;
+   margin-top: 20px;
 }
 
 .btn-branding-outline-foot {
@@ -436,6 +435,8 @@ ul.columns>li:before {
     color: white;
     float:left; 
     width: 400px; 
+    margin-top: 10px;
+    margin-bottom: 5px;
     }
 
 .social-icons-foot a {
@@ -443,7 +444,6 @@ ul.columns>li:before {
     width: 400px;
     width: 45px;
     height: 45px;
-    background: white;
     color: lightblue;
     text-align:center;
     line-height: 35px;
@@ -463,12 +463,13 @@ ul.columns>li:before {
     float:left;
     margin-right: 90px;
    }
+
    .aboutServices {
     display: block;
-   text-align: center;
+    text-align: center;
     margin-top: 50px;
     line-height: 22px;
-   padding: 90px;
-   font-size: 18px;
-
+    padding: 90px;
+    font-size: 18px;
+    margin-bottom: 70px;
   }
