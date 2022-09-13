@@ -106,9 +106,7 @@
 
 
 .image {
-    flex-basis: 20%;
-    float: right;
-    display: block;
+    display: inline-block;
   width: 23em;
 
   }
@@ -119,6 +117,7 @@ h2 {
     font-size: 27px;
     line-height: 1;
     margin-bottom: 0.7rem;
+  
 }
 
 li {
@@ -131,6 +130,8 @@ li {
 }
 .col {
     text-align: center;
+    margin-left: -35px;
+    display: inline-block;
 }
 
 ul.columns>li:before {
@@ -141,6 +142,7 @@ ul.columns>li:before {
     top: 1px;
     color: white;
     margin: 10px;
+    
   }
 
 .description {
