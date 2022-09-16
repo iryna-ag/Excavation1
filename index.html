@@ -148,11 +148,11 @@
        
       <div class="contact-form">
 
-        <form action=”mailto:iryna.agafonov@gmail.com” method=”POST” enctype=”text/plain” name=”EmailForm”>
-          <input type="hidden" name="access_key" value="45d4d71e-66f3-4461-9a01-b21e1ea6a19a">
-          <h3 class="title">Contact us</h3>
+        <form action="https://formspree.io/f/xvoykrjn" method="POST" id="myForm">
+                <h3 class="title">Contact us</h3>
           <div class="input-container">
-            <input type="text" name="name" class="input" placeholder="First and Last Name *" required/>
+            <form action="iryna.agafonov@gmail.com" method="post" enctype="text/plain" >
+          <input type="text" name="name" class="input" placeholder="First and Last Name *" required/>
           </div>
           <div class="input-container">
             <input type="email" name="email" class="input" placeholder="Email Address *" required/>
@@ -161,15 +161,14 @@
             <input type="tel" name="phone" class="input" placeholder="Phone Number *" required/>
           </div>
           <div class="input-container">
-            <input type="text" name="name" class="input" placeholder="Address *" required/>
+            <input type="text" name="address" class="input" placeholder="Address *" required/>
           </div>
           <div class="input-container textarea">
             <textarea name="message" class="input"  id="text-12" placeholder="Please tell us a little bit about your project *"></textarea>
           </div>
-
-
+          
           <div class="submit">
-            <input type="submit" value="Send" id="form_button" />
+            <input type="submit" value="Send" id="form_button"  onclick="myFunction()" value="Reset form"/>
           </div>
         </form>
 
@@ -178,7 +177,9 @@
     </div>
   </div>
 
-
-  <script src="app.js"></script>
+  <script>function myFunction() {
+    document.getElementById("myForm").reset();
+}</script>
+  
 </body>
 </html>
